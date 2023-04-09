@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --white-color: #efefef;
+    --yellow-color: #e6e646;
+    --gray-color: #616161;
+    --graphite-color: #212121;
+    --black-color: #121212;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.top a,
+div.mid-header a,
+div.top i,
+div.mid-header i,
+h1.logo {
+    color: var(--white-color);
+}
+
+div.top {
+    background-color: var(--graphite-color);
+    padding: 2px 0;
+}
+
+div.top a {
+    font-size: 14px;
+}
+
+div.top span a {
+    color: var(--yellow-color);
+}
+
+div.top i,
+div.mid-header i {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+div.bg-mid-header {
+    background-color: var(--gray-color);
+    padding: 16px 0;
+}
+
+form.search-bar {
+    border: 1px solid var(--white-color);
+    border-radius: 20px;
+    width: 40%;
+}
+
+form.search-bar input {
+    width: 100%;
+    padding: 6px 12px;
+    background-color: transparent;
+    color: var(--white-color);
+    font-size: 16px;
+}
+
+form.search-bar input::placeholder {
+    color: var(--white-color);
+}
+
+form.search-bar button {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+form.search-bar button i {
+    font-size: 26px;
+}
+
+.mid-header .btn a {
+    border: 1px solid var(--white-color);
+    border-radius: 20px;
+    margin-left: 16px;
+    padding: 5px 8px;
+}
+
+.mid-header .btn a:hover {
+    border-color: crimson;
+    background-color: #212121;
+    transition: 500ms;
+}
+
+.mid-header .btn a:hover i,
+form.search-bar button:hover i {
+    color: crimson;
+    transition: 500ms;
+}
+
+.btn a i {
+    transform: translateY(2px);
+}
+
+.btn span {
+    background-color: crimson;
+    border-radius: 10px;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--white-color);
+    transform: translatey(-12px);
+}
+
+.submenu {
+    display: none;
+}
