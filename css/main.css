@@ -10,10 +10,12 @@
 
 :root {
     --white-color: #efefef;
-    --yellow-color: #e6e646;
+    --light-gray-color: #d9d9d9;
     --gray-color: #616161;
     --graphite-color: #212121;
     --black-color: #121212;
+    --yellow-color: #e6e646;
+    --red-color: #dc143c;
 }
 
 .container {
@@ -23,7 +25,7 @@
 
 .container-flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -59,9 +61,13 @@ div.bg-mid-header {
     padding: 16px 0;
 }
 
-form.search-bar {
+form.search-bar,
+.mid-header .btn a  {
     border: 1px solid var(--white-color);
     border-radius: 20px;
+}
+
+form.search-bar {
     width: 40%;
 }
 
@@ -69,10 +75,10 @@ form.search-bar input {
     width: 100%;
     padding: 6px 12px;
     background-color: transparent;
-    color: var(--white-color);
     font-size: 16px;
 }
 
+form.search-bar input,
 form.search-bar input::placeholder {
     color: var(--white-color);
 }
@@ -87,21 +93,19 @@ form.search-bar button i {
 }
 
 .mid-header .btn a {
-    border: 1px solid var(--white-color);
-    border-radius: 20px;
     margin-left: 16px;
     padding: 5px 8px;
 }
 
 .mid-header .btn a:hover {
-    border-color: crimson;
+    border-color: var(--red-color);
     background-color: #212121;
     transition: 500ms;
 }
 
 .mid-header .btn a:hover i,
 form.search-bar button:hover i {
-    color: crimson;
+    color: var(--red-color);
     transition: 500ms;
 }
 
@@ -110,7 +114,7 @@ form.search-bar button:hover i {
 }
 
 .btn span {
-    background-color: crimson;
+    background-color: var(--red-color);
     border-radius: 10px;
     padding: 0 5px;
     text-align: center;
@@ -119,6 +123,62 @@ form.search-bar button:hover i {
     transform: translatey(-12px);
 }
 
-.submenu {
+div.nav-bar,
+ul.submenu {
+    background-color: var(--graphite-color);
+}
+
+div.nav-bar li {
+    list-style: none;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px 0;
+    border-right: 1px solid var(--gray-color);
+    position: relative;
+}
+
+ul.submenu {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: -1px;
+}
+
+ul.submenu li {
+    border-bottom: 1px solid var(--light-gray-color);
+    padding: 8px 0;
+}
+
+ul.submenu li,
+div.nav-bar li.menu {
+    border-left: 1px solid var(--gray-color);
+    width: 250px;
+    color: var(--white-color);
+}
+
+div.nav-bar li a {
+    color: var(--white-color);
+}
+
+div.nav-bar li.menu i {
+    margin: 0 10px;
+    font-size: 22px;
+}
+
+div.nav-bar li:hover {
+    background-color: var(--red-color);
+}
+
+div.nav-bar li:hover,
+div.nav-bar li:hover a {
+    transition: 500ms;
+}
+
+ul.nav-menu {
+    justify-content: flex-start;
+}
+
+div.nav-bar li:hover .submenu {
+    display: block;
 }
