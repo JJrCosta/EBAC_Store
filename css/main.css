@@ -388,6 +388,39 @@ form.menu-lateral label {
     cursor: pointer;
 }
 
+section.info1 {
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    column-gap: 2%;
+    padding-bottom: 50px;
+}
+section.info2 {
+    display: none;
+}
+
+section.info1 .info-card {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: var(--light-gray-color);
+    color: var(--gray-color);
+    padding: 10px;
+    border: 2px solid var(--black-color);
+    border-radius: 5px;
+}
+
+section.info1 .info-card i {
+    font-size: 40px;
+    text-align: center;
+    transform: translateY(10px);
+}
+
+.info-card .texto {
+    border-left: 2px solid var(--black-color);
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+
 
 @media screen and (max-width: 1080px) {
     .container {
@@ -421,5 +454,23 @@ form.menu-lateral label {
     .card-produto button#btn-like {
         margin-top: 10px;
     }
-    
+    section.info1 {
+        display: none;
+    }
+    section.info2 {
+        display: block;
+    }
+    section.info2 ul {
+        width: 30%;
+        margin: 0 auto;
+    }
+    section.info2 li {
+        justify-content: flex-start;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    section.info2 li i {
+        font-size: 30px;
+    }
 }
