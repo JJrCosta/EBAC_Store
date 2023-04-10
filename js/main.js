@@ -8,7 +8,7 @@ $(document).ready(function(){
         arrows: false,
         responsive: [
         {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
             slidesToShow: 3,
             slidesToScroll: 3,
@@ -16,18 +16,22 @@ $(document).ready(function(){
         }
         },
         {
-        breakpoint: 600,
+        breakpoint: 850,
         settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToShow: 5,
+            slidesToScroll: 5
         }
         },
         {
         breakpoint: 480,
         settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToShow: 3,
+            slidesToScroll: 3
         }
         }]
     });
+
+    $('.btn-menu-mobile').click(function() {
+        $('.nav-menu').slideToggle()
+    })
 });
