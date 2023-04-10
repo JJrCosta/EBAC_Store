@@ -28,7 +28,9 @@
     justify-content: space-between;
     align-items: center;
 }
-
+/*
+--- CABEÇALHO E BARRA DE NAVEGAÇÃO ---
+*/
 div.top a,
 div.mid-header a,
 div.top i,
@@ -181,4 +183,76 @@ ul.nav-menu {
 
 div.nav-bar li:hover .submenu {
     display: block;
+}
+/*
+--- CONTEUDO PRINCIPAL ---
+--- Section: SOBRE ---
+*/
+section.sobre {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    column-gap: 1%;
+    margin-top: 52px;
+    border-bottom: 2px solid var(--light-gray-color);
+}
+
+section.sobre img {
+    max-width: 600px;
+    width: 100%;
+}
+
+div.marcas {
+    max-width: 610px;
+    margin: 0 5px;
+}
+
+div.marcas h4 {
+    color: var(--graphite-color);
+    border-bottom: 3px solid var(--graphite-color);
+    margin-bottom: 16px;
+}
+
+div.slider img {
+    max-width: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--graphite-color);
+}
+
+.slider button.slick-next.slick-arrow {
+    display: none;
+}
+
+div.marcas .texto {
+    margin: 52px 0;
+}
+
+div.marcas .texto h2 {
+    margin-bottom: 32px;
+    font-size: 38px;
+    font-style: italic;
+}
+
+div.marcas .texto p {
+    margin-bottom: 22px;
+    font-size: 18px;
+    line-height: 28px;
+}
+/*
+--- Section: PROMOÇÕES ---
+*/
+
+
+
+@media screen and (max-width: 1080px) {
+    .container {
+        max-width: 100%;
+    }
+    div.marcas .texto {
+        margin: 22px 0;
+    }
+    div.marcas .texto p {
+        margin-bottom: 16px;
+        font-size: 18px;
+        line-height: 20px;
+    }
 }
