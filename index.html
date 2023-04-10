@@ -24,7 +24,7 @@
                     <span><a href="#">GANHE CUPONS DE ATÉ 70% DE DECONTO*</a></span>
                     <div class="container-flex">
                         <i class='bx bx-help-circle'></i>
-                        <a href="#">Precisa de ajuda?</a>
+                        <a href="#">Ajuda</a>
                     </div>
                 </div>
             </div>
@@ -37,12 +37,17 @@
                         <input type="search" placeholder="Buscar na loja...">
                         <button type="button" class="container-flex"><i class='bx bx-search'></i></button>
                     </form>
-                    <div class="container-flex btn">
+                    <div class="container-flex btn desk">
                         <a href="#"><i class='bx bx-heart'></i>Desejo</a>
                         <a href="#"><i class='bx bx-user-circle'></i>Login<i class='bx bx-chevron-down'></i></a>
                         <a href="#"><i class='bx bx-cart'></i></a><span>0</span>
                     </div>
+                    <div class="container-flex btn mobile">
+                        <a href="#"><i class='bx bx-user-circle'></i></a>
+                        <a href="#"><i class='bx bx-cart'></i></a><span>0</span>
+                    </div>
                 </div>
+                <button class="btn-menu-mobile" type="button"><i class='bx bx-menu-alt-right' ></i>MENU</button>
             </div>
             <div class="bg-low-header nav-bar">
                 <ul class="nav-menu container container-flex">
@@ -78,7 +83,7 @@
 
         <main class="container">
             <section class="sobre">
-                <img src="./img/produtos/store.jpg" alt="Imagem da loja">
+                <img id="loja" src="./img/produtos/store.jpg" alt="Imagem da loja">
                 <div class="marcas">
                     <h4>ENCONTRE AS MELHORES MARCAS</h4>
                     <div class="slider">
@@ -114,7 +119,7 @@
                         </div>
                     </div>
                     <div class="texto">
-                        <h2>Sobre a EBAC Store.</h2>
+                        <h2>Sobre a loja.</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, blanditiis hic quod iusto quidem labore vitae eum architecto praesentium commodi suscipit officia pariatur, repudiandae alias? A incidunt harum ex enim.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, blanditiis hic quod iusto quidem labore vitae eum architecto praesentium commodi suscipit officia pariatur, repudiandae alias? A incidunt harum ex enim.</p>
                     </div>
@@ -283,7 +288,7 @@
                     <aside>
                         <form class="menu-lateral">
 
-                            <p>FILTRAR</p>
+                            <p>FILTROS</p>
                             <div class="container-flex">
                                 <input type="search" placeholder="Buscar filtro">
                                 <button type="button" class="container-flex"><i class='bx bx-search'></i></button>
@@ -359,15 +364,6 @@
                 </div>
             </section>
 
-            <section class="info2">
-                <ul>
-                    <li class="container-flex"><i class='bx bxs-credit-card-alt' ></i><strong>PRATICIDADE NO PAGAMENTO</strong></li>
-                    <li class="container-flex"><i class='bx bxs-truck'></i><strong>ENTRGA RÁPIDA E FRETE GRATIS*</strong></li>
-                    <li class="container-flex"><i class='bx bx-money-withdraw' ></i><strong>CASHBACK</strong></li>
-                    <li class="container-flex"><i class='bx bxs-plane-alt' ></i><strong>VIAJE MAIS</strong></li>
-                </ul>
-            </section>
-
             <section class="colecoes">
                 <h2>CONHEÇA NOSSAS COLEÇÕES</h2>
                 <h3>Uma para cada estilo, tenha você um ou vários.</h3>
@@ -415,8 +411,8 @@
         <footer>
             <div class="container">
                 <div class="local">
-                    <h5>Venha nos visitar</h5>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7449.496750282686!2d165.01725559866156!3d-21.0027212777097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6e9c286753d9e307%3A0xfc075e303e9ac23a!2sNetchaot%2C%20Nova%20Caled%C3%B4nia!5e0!3m2!1spt-BR!2sbr!4v1681119193883!5m2!1spt-BR!2sbr" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>Venha nos visitar</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7449.496750282686!2d165.01725559866156!3d-21.0027212777097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6e9c286753d9e307%3A0xfc075e303e9ac23a!2sNetchaot%2C%20Nova%20Caled%C3%B4nia!5e0!3m2!1spt-BR!2sbr!4v1681119193883!5m2!1spt-BR!2sbr" max-width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <ul>
                     <p>Ajuda</p>
@@ -442,16 +438,15 @@
                 </ul>
                 <ul>
                     <p>Redes Sociais</p>
-                    <ul>
+                    <ul class="social-icons container-flex">
                         <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
                         <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
                         <li><a href="#"><i class='bx bxl-instagram-alt' ></i></a></li>
                         <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
                     </ul>
                     <p>Entre em contato</p>
-                    <li><a href="#">SAC</a></li>
-                    <li><i class='bx bxl-whatsapp'></i><a href="tel:+550099990000">+55 (00)99999-0000</a></li>
-                    <li><i class='bx bxs-envelope'></i><a href="e_store@projeto.jc">e_store@projeto.jc</a></li>
+                    <li class="btn-SAC"><a href="tel:+5508009990000">SAC 0800 999 0000</a></li>
+                    <li class="btn-SAC"><a href="projeto@github.jc"><i class='bx bxs-envelope'></i> projeto@github.jc</a></li>
                 </ul>
             </div>
         </footer>
